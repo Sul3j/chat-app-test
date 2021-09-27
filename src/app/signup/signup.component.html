@@ -1,0 +1,36 @@
+<div class="signup">
+    <section class="signup__content">
+        <header class="signup__header">Sign up</header>
+        <form class="signup__form">
+            <div class="signup__error">Error message!</div>
+            <div class="signup__name-inputs">
+                <div class="signup__field">
+                    <input class="signup__input" type="text" autocomplete="off" placeholder=" ">
+                    <label class="signup__label">First Name</label>
+                </div>
+                <div class="signup__field">
+                    <input class="signup__input" type="text" autocomplete="off" placeholder=" ">
+                    <label class="signup__label">Last Name</label>
+                </div>
+            </div>
+            <div class="signup__field">
+                <input class="signup__input" type="text" autocomplete="off" placeholder=" ">
+                <label class="signup__label">Email Address</label>
+            </div>
+            <div class="signup__field">
+                <input class="signup__input" type="text" autocomplete="off" placeholder=" ">
+                <label class="signup__label">Password</label>
+            </div>
+            <div class="signup__image-field">
+                <label class="signup__image-label">Select Image</label><br>
+                <input type="file" class="signup__image-button" hidden="hidden" #realButton (change)="customButtonChange(realButton, customText)">
+                <button type="button" id="custom-button" (click)="customButtonClick(realButton)" #customButton><i class="fas fa-cloud"></i> choose file</button>
+                <span id="custom-text" #customText>No file choosen</span>
+            </div>
+            <div class="signup__button-field">
+                <input class="signup__button" type="submit" value="Sign up">
+            </div>
+            <div class="signup__link-area">Already signed up? <a href="#" class="signup__link">Login now</a></div>
+        </form>
+    </section>
+</div>

@@ -1,0 +1,126 @@
+@import "../variables";
+@import "../global";
+
+.signup
+{
+    background: $color-white;
+    width: 450px;
+    border-radius: 16px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+    .signup__content
+    {
+        padding: 25px 30px;
+        .signup__header
+        {
+            font-size: 25px;
+            font-weight: 600px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid $border-seperator-color;
+        }
+        .signup__form 
+        {
+            margin: 20px 0;
+            .signup__error
+            {
+                color: $alert-red-color;
+                background-color: $alert-red-background;
+                padding: 8px 10px;
+                text-align: center;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                border: 1px solid $alert-red-background;
+            }
+            .signup__name-inputs
+            {
+                display: flex;
+                .signup__field:first-child
+                {
+                    padding-right: 10px;
+                }
+                .signup__field:last-child
+                {
+                    margin-left: 10px;
+                }
+            }
+            .signup__field
+            {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                width: 100%;
+            }
+            .signup__image-field
+            {
+                margin-bottom: 20px;
+                .signup__image-label
+                {
+                    font-weight: 400;
+                    font-size: 13px;
+                    color: $color-first;
+                }
+                #custom-button {
+                    padding: 5px;
+                    color: $color-first;
+                    background-color: $color-white;
+                    border: 1px solid $color-first;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-family: $font-family;
+                    margin-top: 5px;
+                    text-transform: uppercase;
+                    opacity: 0.3s;
+                }
+
+                #custom-button:hover
+                {
+                    background-color: $file-button-hover;
+                }
+
+                #custom-text
+                {
+                    font-size: 14px;
+                    margin-left: 10px;
+                    font-weight: 300;
+                }
+            }
+            .signup__button-field
+            {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                width: 100%;
+                .signup__button
+                {
+                    height: 45px;
+                    font-size: 17px;
+                    background-color: $color-first;
+                    color: $color-white;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                    opacity: 0.3s;
+                }
+                .signup__button:hover
+                {
+                    background-color: $form-button-hover;
+                }
+            }
+
+            .signup__link-area
+            {
+                text-align: center;
+                font-size: 17px;
+                .signup__link
+                {
+                    text-decoration: none;
+                    color: $color-first;
+                }
+                .signup__link:hover
+                {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
