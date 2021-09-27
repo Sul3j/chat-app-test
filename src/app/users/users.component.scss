@@ -1,0 +1,157 @@
+@import "../variables";
+
+.users
+{
+    background: $color-white;   
+    width: 450px;
+    border-radius: 16px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+    .users__area
+    {
+        padding: 25px 30px;
+        .users__header
+        {
+            display: flex;
+            align-items: center;
+            padding-bottom: 20px;
+            justify-content: space-between;
+            border-bottom: 1px solid $border-seperator-color;
+            .users__content
+            {
+                display: flex;
+                .users__image
+                {
+                    height: 50px;
+                    width: 50px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+                .users__details
+                {
+                    margin-left: 15px;
+                    .users__name
+                    {
+                        margin-top: 3px;
+                        display: block;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                    .users__active
+                    {
+                        margin: 0;
+                        margin-top: 4px;
+                    }
+                }
+            }
+            .users__logout
+            {
+                color: $color-white;
+                font-size: 17px;
+                padding: 7px 15px;
+                background: $color-first;
+                border-radius: 5px;
+                text-decoration: none;
+            }
+        }
+    }
+    .users__search
+    {
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        .users__text
+        {
+            font-size: 18px;
+        }
+        .users__input
+        {
+            position: absolute;
+            height: 42px;
+            width: calc(100% - 80px);
+            border: 1px solid $file-button-hover;
+            padding: 0 13px;
+            font-size: 16px;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+        }
+        .users__button
+        {
+            width: 47px;
+            height: 42px;
+            border: none;
+            outline: none;
+            color: $color-white;
+            background: $color-first;
+            cursor: pointer;
+            font-size: 17px;
+            border-radius: 0 5px 5px 0;
+        }
+    }
+    .users__list
+    {
+        max-height: 350px;
+        overflow-y: auto;
+        .users__list-link
+        {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding-bottom: 20px;
+            justify-content: space-between;
+            border-bottom: 1px solid $border-seperator-color;
+            margin-top: 15px;
+            padding-right: 15px;
+            page-break-after: 10px;
+            .users__list-content
+            {
+                display: flex;
+                align-items: center;
+                .users__list-image
+                {
+                    height: 40px;
+                    width: 40px;
+                }
+                .users__list-details
+                {
+                    margin-left: 15px;
+                    .users__list-name
+                    {
+                        font-size: 18px;
+                        font-weight: 500;
+                        display: block;
+                        margin-top: 3px;
+                        color: $color-black;
+                    }
+                    .users__list-message
+                    {
+                        margin: 0;
+                        margin-top: 3px;
+                        color: $input-hover;
+                    }
+                }
+            }
+            .users__list-status
+            {
+                font-size: 12px;
+                color: $user-active;
+            }
+            .users__list-status--offline
+            {
+                font-size: 12px;
+                color: $user-offline;
+            }
+        }
+
+        .users__list-link:last-child
+        {
+            border: none;
+        }
+    }
+
+    ::-webkit-scrollbar { 
+        width: 0px; 
+    }
+}

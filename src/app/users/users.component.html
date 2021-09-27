@@ -1,0 +1,31 @@
+<div class="users">
+    <section class="users__area">
+        <header class="users__header">
+            <div class="users__content">
+                <img class="users__image" src="../../assets/image.png" alt="">
+                <div class="users__details">
+                    <span class="users__name">User Name</span>
+                    <p class="users__active">Active now</p>
+                </div>
+            </div>
+            <a href="#" class="users__logout">Logout</a>
+        </header>
+        <div class="users__search">
+            <span class="users__text">Select an user to start chat</span>
+            <input class="users__input" type="text" placeholder="Enter name to search...">
+            <button class="users__button"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="users__list">
+            <a class="users__list-link" href="#" *ngFor="let user of users">
+                <div class="users__list-content">
+                    <img class="users__list-image" src="../../assets/image.png" alt="">
+                    <div class="users__list-details">
+                        <span class="users__list-name">User Name</span>
+                        <p class="users__list-message">This is test message</p>
+                    </div>
+                </div>
+                <div class="users__list-status"><i class="fas fa-circle"></i></div>
+            </a>
+        </div>
+    </section>
+</div>

@@ -15,7 +15,7 @@
       right: 15px;
       top: 50%;
       transform: translateY(-50%);
-      color: #ccc;
+      color: $user-offline;
   }
   .input__input {
     position: absolute;
@@ -27,17 +27,17 @@
     border-radius: 0.5rem;
     font-family: inherit;
     font-size: inherit;
-    color: #353b48;
+    color: $color-second;
     outline: none;
     padding: 1.25rem;
     background: none;
 
     &:hover {
-      border-color: $input-hover;
+      border-color: $color-first;
     }
 
     &:focus {
-      border-color: $input-hover;
+      border-color: $color-first;
     }
   }
 
@@ -46,7 +46,7 @@
     left: 1rem;
     top: 0.8rem;
     padding: 0 0.5rem;
-    color: $color-first;
+    color: $color-black;
     cursor: text;
     transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
     background-color: $color-white;
