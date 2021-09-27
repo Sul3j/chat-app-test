@@ -1,27 +1,27 @@
 @import "../variables";
 @import "../global";
 
-.signup
+.signin
 {
     background: $color-white;
     width: 450px;
     border-radius: 16px;
     box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
                 0 32px 64px -48px rgba(0,0,0,0.5);
-    .signup__content
+    .signin__content
     {
         padding: 25px 30px;
-        .signup__header
+        .signin__header
         {
             font-size: 25px;
             font-weight: 600px;
             padding-bottom: 10px;
             border-bottom: 1px solid $border-seperator-color;
         }
-        .signup__form 
+        .signin__form 
         {
             margin: 20px 0;
-            .signup__error
+            .signin__error
             {
                 color: $alert-red-color;
                 background-color: $alert-red-background;
@@ -31,14 +31,14 @@
                 margin-bottom: 20px;
                 border: 1px solid $alert-red-background;
             }
-            .signup__name-inputs
+            .signin__name-inputs
             {
                 display: flex;
-                .input:first-child
+                .signin__field:first-child
                 {
                     padding-right: 10px;
                 }
-                .input:last-child
+                .signin__field:last-child
                 {
                     margin-left: 10px;
                 }
@@ -50,10 +50,10 @@
                 margin-bottom: 20px;
                 width: 100%;
             }
-            .signup__image-field
+            .signin__image-field
             {
                 margin-bottom: 20px;
-                .signup__image-label
+                .signin__image-label
                 {
                     font-weight: 400;
                     font-size: 13px;
@@ -84,13 +84,13 @@
                     font-weight: 300;
                 }
             }
-            .signup__button-field
+            .signin__button-field
             {
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 20px;
                 width: 100%;
-                .signup__button
+                .signin__button
                 {
                     height: 45px;
                     font-size: 17px;
@@ -101,22 +101,22 @@
                     cursor: pointer;
                     opacity: 0.3s;
                 }
-                .signup__button:hover
+                .signin__button:hover
                 {
                     background-color: $form-button-hover;
                 }
             }
 
-            .signup__link-area
+            .signin__link-area
             {
                 text-align: center;
                 font-size: 17px;
-                .signup__link
+                .signin__link
                 {
                     text-decoration: none;
                     color: $color-first;
                 }
-                .signup__link:hover
+                .signin__link:hover
                 {
                     text-decoration: underline;
                 }

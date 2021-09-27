@@ -6,12 +6,18 @@
   padding: 0;
 }
 
-.signup__field {
+.input {
   position: relative;
   width: 20rem;
   height: 3rem;
-
-  .signup__input {
+  .input__icon{
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #ccc;
+  }
+  .input__input {
     position: absolute;
     top: 0;
     left: 0;
@@ -35,7 +41,7 @@
     }
   }
 
-  .signup__label {
+  .input__label {
     position: absolute;
     left: 1rem;
     top: 0.8rem;
@@ -47,8 +53,8 @@
   }
 }
 
-.signup__input ~ .signup__label,
-.signup__input:not(:placeholder-shown).signup__input:not(:focus) ~ .signup__label {
+.input__input ~ .input__label,
+.input__input:not(:placeholder-shown).input__input:not(:focus) ~ .input__label {
   top: -0.5rem;
   font-size: 0.8rem;
   left: 0.8rem;
