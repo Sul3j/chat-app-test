@@ -12,4 +12,14 @@ export class SigninComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  passwordVisibleToggle(passwordInput: HTMLInputElement, passwordEye: HTMLElement){
+    if(passwordInput.type == "password"){
+      passwordInput.type = "text";
+      passwordEye.classList.add("active");
+    } else {
+      passwordInput.type = "password";
+      passwordEye.classList.remove("active");
+    }
+  }
+
 }

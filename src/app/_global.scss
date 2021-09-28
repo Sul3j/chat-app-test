@@ -17,6 +17,10 @@
       transform: translateY(-50%);
       color: $user-offline;
   }
+  .input__icon.active::before{
+    color: #333;
+    content: "\f070";
+  }
   .input__input {
     position: absolute;
     top: 0;

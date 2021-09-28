@@ -18,9 +18,9 @@
                 <label class="input__label">Email Address</label>
             </div>
             <div class="input">
-                <input class="input__input" type="text" autocomplete="off" placeholder=" ">
+                <input class="input__input" type="password" autocomplete="off" placeholder=" " #passwordInput>
                 <label class="input__label">Password</label>
-                <i class="fas fa-eye input__icon"></i>
+                <i class="fas fa-eye input__icon" #passwordEye (click)="passwordVisibleToggle(passwordInput, passwordEye)"></i>
             </div>
             <div class="signup__image-field">
                 <label class="signup__image-label">Select Image</label><br>
