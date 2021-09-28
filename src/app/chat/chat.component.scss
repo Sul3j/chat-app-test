@@ -1,0 +1,138 @@
+@import "../variables";
+
+.chat
+{
+    background: $color-white;   
+    width: 450px;
+    border-radius: 16px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+    .chat__area
+    {
+        .chat__header
+        {
+            display: flex;
+            align-items: center;
+            padding: 18px 30px;
+            .chat__back-link
+            {
+                color: $color-first;
+                font-size: 18px;
+            }
+            .chat__image
+            {
+                height: 45px;
+                width: 45px;
+                margin: 0 15px;
+            }
+            .chat__details
+            {
+                
+                .chat__name
+                {
+                    font-size: 17px; 
+                    font-weight: 500;
+                    display: block;
+                    margin-top: 2px;   
+                }
+                .chat__active
+                {
+                    margin: 0;
+                    margin-top: 3px;
+                }
+            }
+        }
+        .chat__box
+        {
+            overflow-y: auto;
+            height: 500px;
+            background: #f7f7f7;
+            padding: 10px 30px 20px 30px;
+            box-shadow:  inset 0 32px 32px -32px rgb(0 0 0 / 5%),
+                        inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
+            .chat__message-outgoing
+            {
+                display: flex;
+                .chat__details
+                {
+                    margin-left: auto;
+                    max-width: calc(100% - 130px);
+                    .chat__message
+                    {
+                        background: $color-first;
+                        color: $color-white;
+                        padding: 8px 16px;
+                        border-radius: 18px 18px 0 18px;
+                        margin: 8px 0;
+                        margin-top: 18px;
+                        word-wrap: break-word;
+                        box-shadow: 0 0 32px rgb(0 0 0 / 8%),
+                        0 16px 16px -16px rgb(0 0 0 / 10%);
+                    }
+                }
+            }
+
+            .chat__message-incoming
+            {
+                display: flex;
+                align-items: flex-end;
+                .chat__message-avatar
+                {
+                    height: 35px;
+                    width: 35px;
+                    border-radius: 50%;
+                }
+                .chat__details
+                {
+                    margin-left: 10px;
+                    margin-right: auto;
+                    max-width: calc(100% - 130px);
+                    .chat__message
+                    {
+                        padding: 8px 16px;
+                        background: $color-white;
+                        box-shadow: 0 0 32px rgb(0 0 0 / 8%),
+                        0 16px 16px -16px rgb(0 0 0 / 10%);
+                        border-radius: 18px 18px 18px 0;
+                        margin-top: 8px;
+                        margin-bottom: 0;
+                        word-wrap: break-word;
+                    }
+                }
+            }
+        }
+        
+        ::-webkit-scrollbar { 
+            width: 0px; 
+        }
+
+        .chat__typing-area
+        {
+            padding: 18px 30px;
+            display: flex;
+            justify-content: space-between;
+            .chat__input
+            {
+                height: 35px;
+                width: calc(100% - 58px);
+                font-size: 17px;
+                border: 2px solid #e1e5ee;
+                padding: 0 13px;
+                border-radius: 5px 0 0 5px;
+                outline: none;
+            }
+            .chat__button
+            {
+                width: 50px;
+                border: none;
+                outline: none;
+                border-radius: 0 5px 5px 0;
+                background: $color-first;
+                font-size: 19px;
+                color: $color-white;
+                cursor: pointer;
+                margin-left: 2px;
+            }
+        }
+    }
+}
