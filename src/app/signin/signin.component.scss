@@ -3,7 +3,7 @@
 
 .signin
 {
-    background: $color-white;
+    background: $color-third;
     width: 450px;
     border-radius: 16px;
     box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
@@ -17,6 +17,7 @@
             font-weight: 600px;
             padding-bottom: 10px;
             border-bottom: 1px solid $border-seperator-color;
+            color: $color-black;
         }
         .signin__form 
         {
@@ -62,7 +63,7 @@
                 #custom-button {
                     padding: 5px;
                     color: $color-first;
-                    background-color: $color-white;
+                    background-color: $color-third;
                     border: 1px solid $color-first;
                     border-radius: 5px;
                     cursor: pointer;
@@ -74,7 +75,7 @@
 
                 #custom-button:hover
                 {
-                    background-color: $file-button-hover;
+                    background-color: $color-fourth;
                 }
 
                 #custom-text
@@ -95,7 +96,7 @@
                     height: 45px;
                     font-size: 17px;
                     background-color: $color-first;
-                    color: $color-white;
+                    color: $color-third;
                     border-radius: 5px;
                     border: none;
                     cursor: pointer;
@@ -111,6 +112,7 @@
             {
                 text-align: center;
                 font-size: 17px;
+                color: $color-fourth;
                 .signin__link
                 {
                     text-decoration: none;

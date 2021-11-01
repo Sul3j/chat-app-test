@@ -2,7 +2,7 @@
 
 .users
 {
-    background: $color-white;   
+    background: $color-third;   
     width: 450px;
     border-radius: 16px;
     box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
@@ -46,7 +46,7 @@
             }
             .users__logout
             {
-                color: $color-white;
+                color: $color-third;
                 font-size: 17px;
                 padding: 7px 15px;
                 background: $color-first;
@@ -83,7 +83,7 @@
             height: 42px;
             border: none;
             outline: none;
-            color: $color-white;
+            color: $color-third;
             background: $color-first;
             cursor: pointer;
             font-size: 17px;

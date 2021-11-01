@@ -2,7 +2,7 @@
 
 .chat
 {
-    background: $color-white;   
+    background: $color-third;   
     width: 450px;
     border-radius: 16px;
     box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
@@ -60,7 +60,7 @@
                     .chat__message
                     {
                         background: $color-first;
-                        color: $color-white;
+                        color: $color-third;
                         padding: 8px 16px;
                         border-radius: 18px 18px 0 18px;
                         margin: 8px 0;
@@ -90,7 +90,7 @@
                     .chat__message
                     {
                         padding: 8px 16px;
-                        background: $color-white;
+                        background: $color-third;
                         box-shadow: 0 0 32px rgb(0 0 0 / 8%),
                         0 16px 16px -16px rgb(0 0 0 / 10%);
                         border-radius: 18px 18px 18px 0;
@@ -129,7 +129,7 @@
                 border-radius: 0 5px 5px 0;
                 background: $color-first;
                 font-size: 19px;
-                color: $color-white;
+                color: $color-third;
                 cursor: pointer;
                 margin-left: 2px;
             }
